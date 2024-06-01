@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-header">
+            Modal Title
+            <span id="closeModalBtn" class="close-btn">&times;</span>
+        </div>
+        <div class="modal-body">
+            This is the modal.
+        </div>
+        <div class="modal-footer">
+            <button id="closeModalFooterBtn">Close Modal</button>
+        </div>
+    </div>
+
+    <form class="color" id="color">
+        <input placeholder="Type color" type="text" name="color">
+        <button type="submit">Confirm</button>
+    </form>
+
+    <form class="average" id="average">
+        <input id="numInput" placeholder="Enter numbers. E.g. 1:2:3 etc." type="text" name="average">
+        <button type="submit" id="averageButton">Confirm</button>
+        <div id="averageResult"></div>
+    </form>
     <script src="./main.js"></script>
 </body>
 </html>
